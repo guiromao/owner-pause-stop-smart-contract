@@ -30,7 +30,7 @@ contract OwnerPauseStopExample {
     function destroyContract() public {
         require(msg.sender == owner, "Only the owner can destroy the contract!");
         
-        selfdestruct(address(owner));
+        selfdestruct(owner);
     }
     
 }
